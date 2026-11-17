@@ -1,27 +1,14 @@
 import type { Metadata } from "next";
-import { Syne, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import "@fontsource/syne/700.css";
+import "@fontsource/syne/800.css";
+import "@fontsource/plus-jakarta-sans/400.css";
+import "@fontsource/plus-jakarta-sans/500.css";
+import "@fontsource/plus-jakarta-sans/600.css";
+import "@fontsource/plus-jakarta-sans/700.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@fontsource/jetbrains-mono/700.css";
 import "./globals.css";
-
-const syneDisplay = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const jakartaBody = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-mono",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Firtiansyah Okta Resama (Okta) | Front-End Developer",
@@ -34,14 +21,11 @@ export interface RootLayoutProps {
 }
 
 /**
- * Root Server Component layout providing editorial font variables and skip-to-content accessibility.
+ * Root Server Component layout providing self-hosted editorial fonts and skip-to-content accessibility.
  */
 export default function RootLayout({ children }: RootLayoutProps): React.JSX.Element {
   return (
-    <html
-      lang="en"
-      className={`${syneDisplay.variable} ${jakartaBody.variable} ${jetbrainsMono.variable} dark`}
-    >
+    <html lang="en" className="dark">
       <body className="min-h-dvh bg-[#0A0A0A] text-[#F5F5F3] antialiased">
         <a
           href="#manifesto"

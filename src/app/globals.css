@@ -10,6 +10,9 @@
   --text-secondary: #b3b3b3;
   --text-muted: #8f8f8f;
   --accent-lime: #d4ff00;
+  --font-display: "Syne", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
 html {
